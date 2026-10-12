@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": "4eb84da2-3f18-463f-8158-68796764a53f",
+      "name": "Ahmad",
+      "email": "azhafir211@gmail.com",
+      "passwordSalt": "1c00cdb867a2e224a40908c3ff6fa362",
+      "passwordHash": "54e405f6a5c8aabe73c69440068edc3e12e973f211723b67bf8bfc1d7f9488f8d83ff7c376366e60230c4e6aded1d04d1df75cf94665545888f30edd3b47503d",
+      "createdAt": "2026-10-12T09:49:24.649Z"
+    }
+  ],
+  "budgets": {
+    "4eb84da2-3f18-463f-8158-68796764a53f": 40900000
+  },
+  "expenses": [
+    {
+      "id": 1,
+      "userId": "4eb84da2-3f18-463f-8158-68796764a53f",
+      "amount": 28888,
+      "category": "Makanan",
+      "note": "",
+      "spentOn": "2026-10-12",
+      "createdAt": "2026-10-12T09:49:54.313Z"
+    },
+    {
+      "id": 2,
+      "userId": "4eb84da2-3f18-463f-8158-68796764a53f",
+      "amount": 3000000,
+      "category": "Makanan",
+      "note": "",
+      "spentOn": "2026-10-12",
+      "createdAt": "2026-10-12T10:12:36.304Z"
+    }
+  ],
+  "sessions": {
+    "9216a8a361ce6bbb05f1deeab34d5c11dfa0f332f221bc4bff640cd0872770da": {
+      "userId": "4eb84da2-3f18-463f-8158-68796764a53f",
+      "expiresAt": 1792403744539
+    }
+  },
+  "nextExpenseId": 3
+}
