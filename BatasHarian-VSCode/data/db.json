@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": "004ca5c0-2eb5-41ad-a66a-67990c54c844",
+      "name": "Munif",
+      "email": "azhafir211@gmail.com",
+      "passwordSalt": "b910499d32190e7718dec00869739b46",
+      "passwordHash": "4345c61157f5eb1204800ac922fedd152808383513ec472523bc7996594da609fda503d9cbfabc62b90e256ee6cb97b48977425ff8d7ef45a5dfe6cd6357334a",
+      "createdAt": "2026-10-12T04:55:06.374Z"
+    },
+    {
+      "id": "e73a6e51-ed62-4a71-b564-9135f4cddc7b",
+      "name": "Budi",
+      "email": "azmunif08@gmail.com",
+      "passwordSalt": "e934fe3403cb1150c0c8681f95bee3c3",
+      "passwordHash": "2d2c7599fbd976f1f27a2c61475dbdcaae76549608689061e469b8270377500c0b21cac1b678a77e36685eaac52b6157cc0015d6500a1b3eeaf647d9287a581f",
+      "createdAt": "2026-10-12T05:01:11.223Z"
+    }
+  ],
+  "budgets": {
+    "004ca5c0-2eb5-41ad-a66a-67990c54c844": 3000000,
+    "e73a6e51-ed62-4a71-b564-9135f4cddc7b": 3000000
+  },
+  "expenses": [
+    {
+      "id": 1,
+      "userId": "e73a6e51-ed62-4a71-b564-9135f4cddc7b",
+      "amount": 100000,
+      "category": "Makanan",
+      "note": "",
+      "spentOn": "2026-10-12",
+      "createdAt": "2026-10-12T05:02:07.622Z"
+    }
+  ],
+  "sessions": {
+    "60877a45e68aa67c5d3fb0b4d195730c92608d64ee5cfa98afda6ed113659eaf": {
+      "userId": "004ca5c0-2eb5-41ad-a66a-67990c54c844",
+      "expiresAt": 1792385810023
+    },
+    "0929a466947f70b69e338ce16bca621c19a142cadbe8d9f704f2f29524b67d17": {
+      "userId": "e73a6e51-ed62-4a71-b564-9135f4cddc7b",
+      "expiresAt": 1792386103085
+    }
+  },
+  "nextExpenseId": 2
+}
