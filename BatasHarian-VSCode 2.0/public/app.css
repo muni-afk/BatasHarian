@@ -17,8 +17,7 @@
 .page-expenses .transactions-panel { margin-top:28px; }
 .page-expenses #budgetModal { display:none !important; }
 .page-budget .rhythm-panel,
-.page-budget .transactions-panel,
-.page-budget #expenseModal { display:none !important; }
+.page-budget .transactions-panel { display:none !important; }
 .page-budget .content-grid { grid-template-columns:minmax(0,1fr); }
 .page-budget .budget-panel { width:100%; }
 @media(max-width:700px){
