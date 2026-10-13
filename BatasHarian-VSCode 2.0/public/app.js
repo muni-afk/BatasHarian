@@ -28,7 +28,7 @@
   function showModal(id) {
     const el = $('#' + id); if (!el) return; el.hidden = false; document.body.style.overflow = 'hidden';
     if (id === 'expenseModal') { $('#expenseDate').value = isoLocal(); $('#expenseError').textContent = ''; setTimeout(() => $('#expenseAmount').focus(), 40); }
-    if (id === 'budgetModal') { $('#budgetAmount').value = String(state.data ? state.data.monthlyBudget : 3000000); updateBudgetPreview(); $('#budgetError').textContent = ''; setTimeout(() => $('#budgetAmount').focus(), 40); }
+    if (id === 'budgetModal') { $('#budgetAmount').value = String(state.data ? state.data.monthlyBudget : 0); updateBudgetPreview(); $('#budgetError').textContent = ''; setTimeout(() => $('#budgetAmount').focus(), 40); }
   }
   function closeModals() { $$('.modal-backdrop').forEach(el => { el.hidden = true; }); document.body.style.overflow = ''; }
   function updateBudgetPreview() { $('#budgetPreview').textContent = fmt(Math.floor(num($('#budgetAmount').value) / daysInMonth())); }
