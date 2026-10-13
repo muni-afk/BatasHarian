@@ -201,7 +201,7 @@ async function authRoutes(req, res, pathname) {
       }
       const created = { id: crypto.randomUUID(), name, email, passwordSalt: credential.salt, passwordHash: credential.hash, createdAt: new Date().toISOString() };
       db.users.push(created);
-      db.budgets[created.id] = 3000000;
+      db.budgets[created.id] = 0;
       return created;
     });
     await startSession(user.id, res);
@@ -261,7 +261,7 @@ async function financeRoutes(req, res, pathname) {
       .slice(0, 250)
       .map(({ id, amount, category, note, spentOn, createdAt }) => ({ id, amount, category, note, spent_on: spentOn, created_at: createdAt }));
     return sendJson(res, 200, {
-      monthlyBudget: Number(db.budgets[userId] || 3000000),
+      monthlyBudget: Number(db.budgets[userId] ?? 0),
       spentToday,
       spentMonth,
       dailyTotals,
